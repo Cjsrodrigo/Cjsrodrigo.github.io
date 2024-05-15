@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  flex-direction: column;
+
+  background-color: hsl(30, 38%, 92%);
+}
+
+.conteiner {
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 0.7rem;
+  width: 21.25em;
+}
+
+img {
+  width: 100%;
+  border-top-left-radius: 0.7em;
+  border-top-right-radius: 0.7em;
+}
+
+.imgdesk {
+  display: none;
+}
+.infodiv {
+  padding: 1.25em;
+}
+
+.name {
+  color: hsl(211, 28%, 19%);
+  font-weight: 700;
+  font-size: 2.1em;
+}
+.name,
+.sale {
+  font-family: "Fraunces", serif;
+}
+
+.text {
+  font-size: 0.9em;
+}
+
+label,
+.text,
+.fullprice,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+label,
+.text,
+.fullprice {
+  color: hsl(228, 12%, 48%);
+}
+
+.prices {
+  display: flex;
+  gap: 1.2em;
+  align-items: center;
+}
+.sale {
+  color: hsl(158, 36%, 37%);
+  font-size: 2.1em;
+  font-weight: 600;
+}
+
+.fullprice {
+  text-decoration-line: line-through;
+  font-size: 0.9em;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 1em;
+  font-size: 1em;
+  gap: 0.8em;
+  border: white;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: hsl(157, 37%, 12%);
+}
+
+@media (min-width: 90em) {
+  .conteiner {
+    display: flex;
+  }
+  .imgmob {
+    display: none;
+  }
+  .imgdesk {
+    display: flex;
+    display: block;
+    height: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.7em;
+    width: 18.75em;
+  }
+  .conteiner {
+    width: 37.5em;
+  }
+
+  .infodiv {
+    padding: 1.875em;
+  }
+}
